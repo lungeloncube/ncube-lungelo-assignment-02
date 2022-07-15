@@ -14,9 +14,9 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    for (let i = 0; i < arrayOfNumbers.length; i++) {
-        sum += arrayOfNumbers[i];
-    }
+const sum = arrayOfNumbers.reduce((accumulator, value) => {
+    return accumulator + value;
+  }, 0);
     return sum
     
 }
